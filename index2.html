@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday My Love</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ffd1dc, #ffe0f0);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .page-section {
+      display: none;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .page-section.active {
+      display: block;
+    }
+
+    h1, h2 {
+      font-family: 'Great Vibes', cursive;
+      color: #d6336c;
+    }
+
+    .photo-section img {
+      max-width: 400px;
+      max-height: 500px;
+      border-radius: 30%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    video, audio {
+      width: 90%;
+      max-width: 500px;
+      border-radius: 12px;
+      border: 2px solid #d6336c;
+    }
+
+    .love-btn {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: #d6336c;
+      margin-top: 30px;
+      animation: pulse 1.5s infinite;
+      cursor: pointer;
+    }
+
+    .love-btn:hover {
+      color: #b1004d;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .hearts-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .heart {
+      position: absolute;
+      top: -50px;
+      font-size: 24px;
+      color: #ff69b4;
+      animation: fall 2s linear forwards;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Falling hearts container -->
+  <div class="hearts-container" id="hearts-container"></div>
+
+  <!-- Page Sections -->
+  <div class="page-section active" id="page1">
+    <div class="container-fluid">
+      <h1 class="mb-4">Happy Birthday, My Love, Queen of my World!. I wish god to be by your side all the times protecting you from everything with his blessings all the times with you and to make your future as brighter as you imagine and fill your life with joy and laughter</h1>
+      <div class="photo-section">
+        <img src="Snapchat-1564269835.jpg" alt="Her Photo">
+      </div>
+  
+      <button class="love-btn" onclick="nextPage(2)">❤️</button>
+    </div>
+    <p>Babe, click on the ❤️ button to open the next page</p>
+  </div>
+  <!-- Inside each .container-fluid block -->
+
+  
+
+  <div class="page-section" id="page2">
+    <div class="container-fluid">
+      <h2>To the Love of My Life</h2>
+      <p class="mt-4">On this special day, I want to remind you how much you mean to me. You’ve filled my life with laughter, love, and joy. Your smile brightens my darkest days and your love makes me strong.</p>
+      <p>I do even love you more than anything and everything dear. I know why you're this much to me because the love you had upon me was incredible</p>
+      <div class="row justify-content-center mt-5">
+        <div class="col-6 col-md-3 mb-3">
+          <img src="IMG-20231201-WA0059.jpg" class="img-fluid rounded shadow-sm" alt="Memory 1">
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <img src="Snapchat-2015548314.jpg" class="img-fluid rounded shadow-sm" alt="Memory 2">
+        </div>
+    
+      </div>
+      <button class="love-btn" onclick="nextPage(3)">💖</button>
+    </div>
+  </div>
+  
+
+  <div class="page-section" id="page3">
+    <div class="container-fluid">
+      <h2>Our Special Moments</h2>
+      <video controls class="mt-3">
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="love-btn" onclick="nextPage(4)">💘</button>
+    </div>
+  </div>
+
+  <div class="page-section" id="page4">
+    <div class="container-fluid">
+      <h2>A Song Just for You</h2>
+      <audio controls autoplay loop class="mt-3">
+        <source src="B_Audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="row justify-content-center mt-5">
+        <div class="col-6 col-md-3 mb-3">
+          <img src="Snapchat-715622639-2.jpg" class="img-fluid rounded shadow-sm" alt="Memory 1">
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <img src="Snapchat-447471679.jpg" class="img-fluid rounded shadow-sm" alt="Memory 2">
+        </div>
+      </div>
+      <button class="love-btn" onclick="nextPage(5)">💝</button>
+    </div>
+  </div>
+
+  <div class="page-section" id="page5">
+    <div class="container-fluid">
+      <h2>Forever Yours</h2>
+      <p class="mt-3">This is just a tiny piece of how much I love you. I hope it made you smile. Wishing you the happiest, most magical birthday ever.</p>
+      <footer class="mt-5">Made with love, just for you 💗</footer>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-6 col-md-3 mb-3">
+          <img src="Snapchat-1509060224.jpg" class="img-fluid rounded shadow-sm" alt="Memory 1">
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <img src="Snapchat-1964679777.jpg" class="img-fluid rounded shadow-sm" alt="Memory 2">
+        </div>
+      </div>
+    <button class="love-btn" onclick="nextPage(6)">💝</button>
+  </div>
+
+  <div class="page-section" id="page6">
+    <div class="container-fluid">
+        <h2>Just thought of you get to know the things that you don't know about me</h2>
+        <p>That's not because you haven't enquired about me but these things aren't even known by my mom</p>
+        <p>Firstly I still love you more than anything mummyy💝</p> <br/>
+        <p>Maa.. I never thought we'd get apart from each other coz we did those many things faced a lot for our love to get succeed and to get married</p>
+        <p>And we'd never be like others</p>
+        <p>And I never thought of getting apart from you</p>
+        <p>I was much more sensitive than that of you baby but I never wanted to tell you about it coz I don't know what the consequences would be. If you would hurt me I cant take that</p>
+        <p>Everytime we do fight with each other from the next second even I do again hold my phone and wait for your calls, texts. But in return I always expect from you is that "Baby lets be good without any kind of these mis-understandings"</p>
+        <p>And I never wanted to hurt you in any way. I always wanted to be with you and to be loved by you</p>
+        <p>You might wonder why then I behaved like that. Thats because I always wanted to be happy with you without any further more previous kind of fights.</p>
+        <p>Atleast I thought that "The love that you have upon me wont make you survive without talking to me" for that atleast you'd rather change for me for our good relationship </p>
+        <p>And I never wanted to be like this. I always wanted to be with you and to be loved by you</p>      
+    </div>
+    <button class="love-btn" onclick="nextPage(7)">💝</button>
+  </div>
+
+  <div class="page-section" id="page7">
+    <div class="container-fluid">
+        <h2>You're my one and only world and you the only person in full of my heart mom</h2>
+        <p>Bae I might not be a perfect but I loved you truly and from the bottom of my heart</p>
+        <p>One thing. Youre the only person in my world bae. I always wanted to talk to you, wanted to be with you</p>
+        <p>And for that only whenever you ask me for going out I ask you to stay in the room itself, so that I can talk to you more and more</p>
+        <p>I might be a part of your world baby but you're my one and only world and person. You might have lot of people to talk, to make things, to do more</p>
+        <p>But I dont care anybody because I only want you, love you and loved by you</p>
+        <p>I had no other things than that of you so that only:</p>
+            <p>When you ask me to go out I say no</p>
+            <p>I want you always to be with me all the times</p>
+            <p>I want to talk to you more and more</p>
+        </ul>
+        <p>Nuvu thappa naakevvaru leeru mammaa</p>
+    </div>
+    <button class="love-btn" onclick="nextPage(8)">💝</button>
+  </div>
+
+  <div class="page-section" id="page8">
+    <div class="container-fluid">
+        <h2>I'm not at all cheap baby 😭</h2>
+        <p>I begged you and I might have irritated you </p>
+        <p>All its not because im cheap. That's because you're more than anything and everything to me</p>
+        <p>I can get down to any extent for you to be with me and our relationship to last forever</p>
+        <p>All it matters for me is not I'm getting cheaper in front of you but it's a matter of we getting into our relationship and to make our love succeed</p>
+        <p>And nv anukuntunnatlu nenem nannu vere evaraina cheap ga chuse la behave cheyanu baby. Naatho unde vallu evvaru nannala chudaru ala cheyaru. </p>
+        <p>Nee vishayam lo thappu chesa baby antee kani nene thappudu manishini kaaduu</p>
+        <p>May be nenem antha manchi vaadni avvapovachu kani bad fellow ni aythe kaadu mummyy</p>
+    </div>
+    <button class="love-btn" onclick="nextPage(9)">💝</button>
+  </div>
+
+  <div class="page-section" id="page9">
+    <div class="container-fluid">
+        <h2>All this is your imagination nothing true amongst these</h2>
+        <p>As you are thinking of like I'm injecting something bad about you into my friends is not at all true baby you can ask anybody without hesitation</p>
+        <p>You're always a queen to me. Nenu mana madhya unnavi evarthoo share cheskonu. Emaina godava aythe evraina adugute kuda nee gurinchem cheppanu baby nv ala ila ani just lahari matladatle anduke ila sad ga unna ani chepta endukila unnav ante</p>
+        <p>Nothing other than that</p>
+        <p>I wanted to make you know that I'll change like how you do want me to me to stay with you</p>
+        <p>I promise you I never hurt you again</p>
+        <p>I know i'm perfect but I want to put all my efforts to make our relationship survive and get succeed for all what we have faced</p>
+        <p>This is not like we gotta feel that type of pain again but that type of love again</p>
+        <p>Nv nannu andari daggara nuvu cheap annappudu nunchi naakem manchiga leedasalu nenala kaadu baby ala assal undanu</p>
+        <p>Just nee daggara neekosam cheap aypoya anthee</p>
+        <p>Nv 8-years penchukunna nee baby ni nuve nammakapothe "I dont have anymore words to say"</p>
+
+        <h4>If you have any concern about me then continue to the last page else don't go for it</h4>
+
+        <p>But, Atleast let me know with some reply that you have read all these like "I read"</p>
+    </div>
+    <button class="love-btn" onclick="nextPage(10)">💝</button>
+  </div>
+
+  <div class="page-section" id="page10">
+    <div class="container-fluid">
+        <h2>Me when I started typing all these</h2> <br/>
+        <img src="me.png" alt="Me" style="width: 400px; height: 100px;">
+        <p>You know much better than that of me that these eyes wont tell you lies</p>
+        
+        <p>Naaku nuvu kavalii. Mallii tirigocheyy mummyyy 😭😭😭😭. Nv lekunda nenundalenu mummyy💝 </p>
+        <p>Have a lil bit of concern about me Mom!!</p>
+        <p>I'm not at all your enemy nah! I did a lot of things for you isn't it??</p>
+        <p>Nenu nee pottalo nunchi vachina baby ni kada mummyy.. Baby thappu cheste emaina ala edokati punish chesi malli daggaraki teeskovali kada kani vadileyadu kada alane undu mummyy nuvu</p>
+        <p>Please mummyy!! 😭😭😭</p>
+        <p>Nv chala manchi danivi kada baby nannu ee okkasaari kshaminchu mammaa. Manchiga undam Bangaramm please raa. 
+          Nuvu lekunda nenassalu undalenu
+        </p>
+        <p>Nenu assal move on avvalenu baby. Think of me please.</p>
+        <p>Okkasaari nannu nammu mummyy. Tarvata eppudainaa okka thappu chesinaa nene vellipota baby please baby okka chance ivvu naaku</p>
+        <p>Kashatlu vaste vadilestava baby anni sort cheskoni happy ga undam kada please mummyy</p>
+        <p>Nenu first nunche cheppina kada baby nv lekunda nenu undalenu ani madhyalo nannila vadilestee. please mammaa naatho unduu 🙏🙏</p>
+        <p>Okkasari baby undam ani msg chey mammaa. Annii sort out cheskoni happy ga undam appatlaa kakundaa 😭😭</p>
+        <p>Neekosam nenu chaala suffer avtunnaa baby</p>
+        
+    </div>
+
+    <a href="https://wa.me/919014680891?text=Kalisi%20Undam%20Nannaa%20" 
+       target="_blank" 
+       class="btn btn-success mt-4 d-inline-flex align-items-center gap-2 shadow-sm">
+      <i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
+      Text Him!!
+    </a>
+  </div>
+
+
+  <!-- Scripts -->
+  <script>
+    function nextPage(pageNumber) {
+      document.querySelectorAll('.page-section').forEach(section => section.classList.remove('active'));
+      document.getElementById('page' + pageNumber).classList.add('active');
+      showFallingHearts();
+    }
+
+    function showFallingHearts() {
+      const container = document.getElementById('hearts-container');
+      container.innerHTML = '';
+
+      for (let i = 0; i < 25; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.fontSize = (20 + Math.random() * 20) + 'px';
+        heart.textContent = '❤️';
+        container.appendChild(heart);
+      }
+
+      setTimeout(() => {
+        container.innerHTML = '';
+      }, 15000);
+    }
+
+    window.onload = showFallingHearts;
+  </script>
+
+</body>
+</html>
